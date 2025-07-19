@@ -1,0 +1,77 @@
+/* Ensure Tailwind CSS is installed and configured in your project for these directives to work */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #021D2F;
+    --foreground: #CAD0D2;
+    --card: #04304A;
+    --card-foreground: #CAD0D2;
+    --primary: #3AA4C9;
+    --primary-foreground: #021D2F;
+    --secondary: #145781;
+    --secondary-foreground: #CAD0D2;
+    --muted: #04304A;
+    --muted-foreground: #CAD0D2;
+    --accent: #3AA4C9;
+    --accent-foreground: #021D2F;
+    --border: #145781;
+    --input: #04304A;
+    --ring: #3AA4C9;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #021D2F;
+    --foreground: #CAD0D2;
+    --card: #04304A;
+    --card-foreground: #CAD0D2;
+    --primary: #3AA4C9;
+    --primary-foreground: #021D2F;
+    --secondary: #145781;
+    --secondary-foreground: #CAD0D2;
+    --muted: #04304A;
+    --muted-foreground: #CAD0D2;
+    --accent: #3AA4C9;
+    --accent-foreground: #021D2F;
+    --border: #145781;
+    --input: #04304A;
+    --ring: #3AA4C9;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-[#145781]/20;
+  }
+  
+  body {
+    @apply bg-[#021D2F] text-[#CAD0D2];
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background;
+  }
+  
+  .btn-primary {
+    @apply bg-[#3AA4C9] text-[#021D2F] hover:bg-[#145781];
+  }
+  
+  .btn-secondary {
+    @apply bg-[#145781] text-[#CAD0D2] hover:bg-[#04304A];
+  }
+  
+  .card {
+    @apply rounded-lg border border-[#145781]/20 bg-[#04304A]/20 text-[#CAD0D2] shadow-sm;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
