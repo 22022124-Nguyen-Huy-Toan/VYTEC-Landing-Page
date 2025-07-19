@@ -41,26 +41,26 @@ export default function CountdownTimer() {
 
   return (
     <div className="flex justify-center mb-12">
-      <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 hover:scale-105 hover:shadow-2xl transition-all duration-300">
-        <div className="flex space-x-4 text-center">
+      <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 hover:scale-105 hover:shadow-2xl transition-all duration-300">
+        <div className="flex space-x-6 text-center">
           <div className="flex flex-col hover:scale-110 transition-transform duration-300">
-            <span className="text-3xl font-bold text-white">{timeLeft.days}</span>
-            <span className="text-sm text-white/70">Ngày</span>
+            <span className="text-4xl md:text-5xl font-bold text-white">{timeLeft.days}</span>
+            <span className="text-base text-white/70">Ngày</span>
           </div>
-          <div className="text-white/50 text-2xl">:</div>
+          <div className="text-white/50 text-3xl md:text-4xl flex items-center">:</div>
           <div className="flex flex-col hover:scale-110 transition-transform duration-300">
-            <span className="text-3xl font-bold text-white">{timeLeft.hours}</span>
-            <span className="text-sm text-white/70">Giờ</span>
+            <span className="text-4xl md:text-5xl font-bold text-white">{timeLeft.hours}</span>
+            <span className="text-base text-white/70">Giờ</span>
           </div>
-          <div className="text-white/50 text-2xl">:</div>
+          <div className="text-white/50 text-3xl md:text-4xl flex items-center">:</div>
           <div className="flex flex-col hover:scale-110 transition-transform duration-300">
-            <span className="text-3xl font-bold text-white">{timeLeft.minutes}</span>
-            <span className="text-sm text-white/70">Phút</span>
+            <span className="text-4xl md:text-5xl font-bold text-white">{timeLeft.minutes}</span>
+            <span className="text-base text-white/70">Phút</span>
           </div>
-          <div className="text-white/50 text-2xl">:</div>
+          <div className="text-white/50 text-3xl md:text-4xl flex items-center">:</div>
           <div className="flex flex-col hover:scale-110 transition-transform duration-300">
-            <span className="text-3xl font-bold text-white">{timeLeft.seconds}</span>
-            <span className="text-sm text-white/70">Giây</span>
+            <span className="text-4xl md:text-5xl font-bold text-white">{timeLeft.seconds}</span>
+            <span className="text-base text-white/70">Giây</span>
           </div>
         </div>
       </div>

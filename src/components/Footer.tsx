@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-12">
           {/* Logo & Description */}
-          <div className="flex flex-col items-start flex-1 mb-8 md:mb-0">
+          <div className="flex flex-col items-start mb-8 md:mb-0 md:w-2/3">
             <Image
               src="/images/Logos/VYTEC.png"
               alt="Logo VYTEC'25"
@@ -16,7 +16,7 @@ export default function Footer() {
               className="w-32 h-auto mb-4 hover:scale-105 transition-all duration-300"
               priority
             />
-            <p className="text-white/70 hover:text-white/90 transition-colors duration-300">
+            <p className="text-white/70 hover:text-white/90 transition-colors duration-300 text-lg font-medium mb-2">
               Cuộc thi Ý tưởng Sáng tạo Công nghệ
             </p>
             <p className="text-white/60 mt-2 text-sm">
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           {/* Liên hệ */}
-          <div className="flex flex-col items-start flex-1" id="contact">
+          <div className="flex flex-col items-start md:w-1/3 md:mt-20" id="contact">
             <h4 className="text-white font-semibold mb-4 hover:text-orange-400 transition-colors duration-300">
               Liên hệ
             </h4>

@@ -21,7 +21,7 @@ export default function Page() {
       
       {/* Sections de contenu - séparées du hero */}
       <div className="relative z-10 bg-gradient-to-br from-[#021D2F] via-[#04304A] to-[#145781]">
-        <AboutSection />
+        {/* <AboutSection /> */}
         <TimelineSection />
         <PrizesSection />
         <CTASection />
