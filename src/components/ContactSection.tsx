@@ -16,60 +16,66 @@ export default function ContactSection() {
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {/* Hotline */}
-            <Card className="bg-gradient-to-br from-[#2B3A55]/80 to-[#1B263B]/70 border-[#00E0FF]/70 backdrop-blur-sm hover:from-[#2B3A55]/90 hover:to-[#1B263B]/90 hover:border-[#00E0FF]/90 hover:scale-105 hover:shadow-2xl transition-all duration-500 group">
+            <Card className="bg-gradient-to-br from-[#2B3A55]/80 to-[#1B263B]/70 border-[#00E0FF]/70 backdrop-blur-sm hover:from-[#2B3A55]/90 hover:to-[#1B263B]/90 hover:border-[#00E0FF]/90 hover:scale-105 hover:shadow-2xl transition-all duration-500 group cursor-pointer">
               <CardContent className="p-6 text-center">
-                <div className="bg-[#00E0FF]/70 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-[#00E0FF]/90 group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
-                  <Phone className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-[#00E0FF] mb-2 group-hover:text-white transition-colors duration-300">
-                  Hotline
-                </h3>
                 <a 
-                  href="tel:0338073142" 
-                  className="text-white/90 hover:text-white transition-colors duration-300 text-lg font-medium"
-                  title="Gọi Hotline"
+                  href="tel:0338073142"
+                  className="block w-full"
+                  title="Click để gọi Hotline"
                 >
-                  0338 073 142
+                  <div className="bg-[#00E0FF]/70 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-[#00E0FF]/90 group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                    <Phone className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#00E0FF] mb-2 group-hover:text-white transition-colors duration-300">
+                    Hotline
+                  </h3>
+                  <span className="text-white/90 hover:text-white transition-colors duration-300 text-lg font-medium">
+                    0338 073 142
+                  </span>
                 </a>
               </CardContent>
             </Card>
 
             {/* Email */}
-            <Card className="bg-gradient-to-br from-[#1B263B]/80 to-[#415A77]/70 border-[#00E0FF]/70 backdrop-blur-sm hover:from-[#1B263B]/90 hover:to-[#415A77]/90 hover:border-[#00E0FF]/90 hover:scale-105 hover:shadow-2xl transition-all duration-500 group">
+            <Card className="bg-gradient-to-br from-[#1B263B]/80 to-[#415A77]/70 border-[#00E0FF]/70 backdrop-blur-sm hover:from-[#1B263B]/90 hover:to-[#415A77]/90 hover:border-[#00E0FF]/90 hover:scale-105 hover:shadow-2xl transition-all duration-500 group cursor-pointer">
               <CardContent className="p-6 text-center">
-                <div className="bg-[#00E0FF]/70 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-[#00E0FF]/90 group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
-                  <Mail className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-[#00E0FF] mb-2 group-hover:text-white transition-colors duration-300">
-                  Email
-                </h3>
                 <a 
-                  href="mailto:vytec.contact@gmail.com" 
-                  className="text-white/90 hover:text-white transition-colors duration-300 text-sm font-medium break-all"
-                  title="Gửi Email"
+                  href="mailto:vytec.contact@gmail.com"
+                  className="block w-full"
+                  title="Click để gửi Email"
                 >
-                  vytec.contact@gmail.com
+                  <div className="bg-[#00E0FF]/70 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-[#00E0FF]/90 group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                    <Mail className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#00E0FF] mb-2 group-hover:text-white transition-colors duration-300">
+                    Email
+                  </h3>
+                  <span className="text-white/90 hover:text-white transition-colors duration-300 text-sm font-medium break-all">
+                    vytec.contact@gmail.com
+                  </span>
                 </a>
               </CardContent>
             </Card>
 
             {/* Facebook */}
-            <Card className="bg-gradient-to-br from-[#778DA9]/80 to-[#2B3A55]/70 border-[#00E0FF]/70 backdrop-blur-sm hover:from-[#778DA9]/90 hover:to-[#2B3A55]/90 hover:border-[#00E0FF]/90 hover:scale-105 hover:shadow-2xl transition-all duration-500 group">
+            <Card className="bg-gradient-to-br from-[#778DA9]/80 to-[#2B3A55]/70 border-[#00E0FF]/70 backdrop-blur-sm hover:from-[#778DA9]/90 hover:to-[#2B3A55]/90 hover:border-[#00E0FF]/90 hover:scale-105 hover:shadow-2xl transition-all duration-500 group cursor-pointer">
               <CardContent className="p-6 text-center">
-                <div className="bg-[#00E0FF]/70 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-[#00E0FF]/90 group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
-                  <Facebook className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-[#00E0FF] mb-2 group-hover:text-white transition-colors duration-300">
-                  Facebook
-                </h3>
                 <a 
-                  href="https://www.facebook.com/VYTEC.Official" 
+                  href="https://www.facebook.com/VYTEC.Official"
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-white/90 hover:text-white transition-colors duration-300 text-sm font-medium"
-                  title="Facebook Page"
+                  className="block w-full"
+                  title="Click để mở Facebook Page"
                 >
-                  VYTEC.Official
+                  <div className="bg-[#00E0FF]/70 p-4 rounded-full w-16 h-16 mx-auto mb-4 group-hover:bg-[#00E0FF]/90 group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                    <Facebook className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#00E0FF] mb-2 group-hover:text-white transition-colors duration-300">
+                    Facebook
+                  </h3>
+                  <span className="text-white/90 hover:text-white transition-colors duration-300 text-sm font-medium">
+                    VYTEC.Official
+                  </span>
                 </a>
               </CardContent>
             </Card>
@@ -110,7 +116,7 @@ export default function ContactSection() {
                   <strong>Thứ 2 - Thứ 6:</strong> 8:00 - 17:00<br />
                   <strong>Thứ 7:</strong> 8:00 - 12:00<br />
                   <strong>Chủ nhật:</strong> Nghỉ<br />
-                  <span className="text-[#3AA4C9] font-medium">Hỗ trợ 24/7 qua Zalo & Email</span>
+                  <span className="text-[#3AA4C9] font-medium">Hỗ trợ 24/7 qua Hotline & Email</span>
                 </p>
               </CardContent>
             </Card>
