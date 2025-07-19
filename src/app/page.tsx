@@ -5,6 +5,7 @@ import HeroSection from '@/components/HeroSection'
 import AboutSection from '@/components/AboutSection'
 import TimelineSection from '@/components/TimelineSection'
 import PrizesSection from '@/components/PrizesSection'
+import ContactSection from '@/components/ContactSection'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
 
@@ -21,9 +22,10 @@ export default function Page() {
       
       {/* Sections de contenu - séparées du hero */}
       <div className="relative z-10 bg-gradient-to-br from-[#021D2F] via-[#04304A] to-[#145781]">
-        {/* <AboutSection /> */}
+        <AboutSection />
         <TimelineSection />
         <PrizesSection />
+        <ContactSection />
         <CTASection />
         <Footer />
       </div>

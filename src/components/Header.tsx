@@ -12,15 +12,25 @@ export default function Header() {
     setIsMenuOpen(false)
     setTimeout(() => {
       const element = document.getElementById(sectionId)
+      console.log('Navigating to:', sectionId, 'Element found:', element)
       if (element) {
-        const headerHeight = 80
-        const elementPosition = element.offsetTop - headerHeight
+        const rect = element.getBoundingClientRect()
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+        const elementTop = rect.top + scrollTop
+        const headerHeight = 100
+        const targetPosition = elementTop - headerHeight
+        
+        console.log('Element rect:', rect.top)
+        console.log('Current scroll:', scrollTop)
+        console.log('Element absolute top:', elementTop)
+        console.log('Target scroll position:', targetPosition)
+        
         window.scrollTo({
-          top: elementPosition,
+          top: targetPosition,
           behavior: 'smooth'
         })
       }
-    }, 100)
+    }, 150)
   }
 
   return (
@@ -62,10 +72,10 @@ export default function Header() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#3AA4C9] group-hover:w-full transition-all duration-300"></span>
             </button>
             <button 
-              onClick={() => handleNavClick('rules')}
+              onClick={() => handleNavClick('contact')}
               className="hover:text-[#3AA4C9] hover:scale-105 transition-all duration-300 relative group py-2"
             >
-              Thể lệ
+              Liên hệ
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#3AA4C9] group-hover:w-full transition-all duration-300"></span>
             </button>
           </div>
@@ -105,10 +115,10 @@ export default function Header() {
                 Giải thưởng
               </button>
               <button 
-                onClick={() => handleNavClick('rules')}
+                onClick={() => handleNavClick('contact')}
                 className="text-[#CAD0D2]/90 hover:text-[#3AA4C9] hover:bg-[#3AA4C9]/20 hover:scale-105 transition-all duration-300 py-3 px-3 rounded-md text-left"
               >
-                Thể lệ
+                Liên hệ
               </button>
             </div>
           </div>
