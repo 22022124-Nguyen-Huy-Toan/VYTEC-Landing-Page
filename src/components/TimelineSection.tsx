@@ -6,7 +6,7 @@ export default function TimelineSection() {
   return (
     <section id="timeline" className="py-12 sm:py-16 lg:py-20">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-white mb-8 sm:mb-10 lg:mb-12 hover:scale-105 transition-transform duration-300">
             Hành trình VYTEC&#39;25
           </h2>

@@ -10,9 +10,10 @@ export default function CTASection() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6 hover:scale-105 transition-transform duration-300 leading-tight">
             Sẵn sàng bắt đầu hành trình?
           </h2>
-          <p className="text-lg md:text-xl text-white/80 mb-6 md:mb-8 hover:text-white/90 transition-colors duration-300 leading-relaxed px-4">
-            Tham gia VYTEC&apos;25 ngay hôm nay và biến ý tưởng công nghệ của bạn thành hiện thực!
+          <p className="inline-block text-lg md:text-xl text-white/80 mb-6 md:mb-8 hover:text-white/90 transition-colors duration-300 leading-relaxed whitespace-nowrap">
+          Tham gia VYTEC&#39;25 ngay hôm nay và biến ý tưởng công nghệ của bạn thành hiện thực!
           </p>
+
           <Button
             size="lg"
             className="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white border-0 

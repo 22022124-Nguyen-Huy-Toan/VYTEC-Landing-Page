@@ -7,20 +7,20 @@ export default function AboutSection() {
     <section id="about" className="py-20 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-[#CAD0D2] mb-12 hover:scale-105 transition-transform duration-300">
+            <h2 className="text-4xl font-bold text-center text-[#CAD0D2] mb-12 hover:scale-105 transition-transform duration-300 opacity-100">
             VYTEC&#39;25 – Đánh thức tiềm năng, bứt phá ý tưởng
-          </h2>
-          <p className="text-[#CAD0D2] text-lg mb-4 text-justify">
+            </h2>
+            <p className="text-[#CAD0D2] text-lg mb-4 text-justify opacity-100">
             Bản sắc không phải thứ sẵn có – mà là hành trình bạn tự mình khám phá. Đến với VYTEC&#39;25, mỗi bạn trẻ là một nguồn sáng tiềm năng đang chờ được khai mở thông qua đam mê, tinh thần sáng tạo và ứng dụng công nghệ. Đây không chỉ là một cuộc thi, mà là hành trình bạn dám bước đi, dám trải nghiệm, để trở thành phiên bản ý nghĩa và sắc nét nhất của chính mình.
-          </p>
-          <p className="text-[#CAD0D2] text-base mb-4 text-justify">
+            </p>
+            <p className="text-[#CAD0D2] text-base mb-4 text-justify opacity-100">
             Cuộc thi Ý tưởng Sáng tạo Công nghệ - VYTEC&#39;25 do CLB Nguồn nhân lực HRTech phối hợp cùng 
             Liên chi Đoàn – Liên chi Hội Khoa Điện tử Viễn thông, Trường Đại học Công nghệ – ĐHQGHN đồng tổ chức. 
             Cuộc thi dành cho các bạn sinh viên toàn quốc với mục tiêu khơi dậy tinh thần sáng tạo, đam mê khoa học công nghệ và thúc đẩy tinh thần khởi nghiệp trong giới trẻ.
-          </p>
-          <p className="text-[#CAD0D2] text-base mb-8 text-justify">
+            </p>
+            <p className="text-[#CAD0D2] text-base mb-8 text-justify opacity-100">
             Cuộc thi không chỉ là nơi để thi đấu – mà là một hành trình toàn diện giúp bạn phát triển từ bên trong và bứt phá ra bên ngoài.
-          </p>
+            </p>
           
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="bg-gradient-to-br from-[#2B3A55]/80 to-[#1B263B]/70 border-[#00E0FF]/70 backdrop-blur-sm hover:from-[#2B3A55]/90 hover:to-[#1B263B]/90 hover:border-[#00E0FF]/90 hover:scale-105 hover:shadow-2xl transition-all duration-500 group">
